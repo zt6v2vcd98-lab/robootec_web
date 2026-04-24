@@ -540,8 +540,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .pillar-icon {
-  width: 108px;
-  height: 108px;
+  width: 84px;
+  height: 84px;
   margin: 0 auto 18px;
   object-fit: contain;
   filter: hue-rotate(188deg) saturate(135%) brightness(0.9) contrast(1.04);
