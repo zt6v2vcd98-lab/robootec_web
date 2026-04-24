@@ -105,21 +105,16 @@ main {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  flex-shrink: 0;
 }
 
-.logo-mark {
-  width: 16px;
-  height: 16px;
-  border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.08);
+.logo-image {
+  width: auto;
+  height: 42px;
 }
 
-.logo-text {
-  font-size: 1.05rem;
+.logo-image-footer {
+  height: 38px;
 }
 
 .site-nav {
@@ -186,9 +181,9 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .button-secondary {
-  color: var(--text);
-  background: #fff;
-  border-color: var(--line);
+  color: #fff;
+  background: var(--primary);
+  box-shadow: 0 12px 24px rgba(30, 58, 138, 0.18);
 }
 
 .button-full {
@@ -709,6 +704,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   .pillar-grid,
   .investor-grid {
     grid-template-columns: 1fr;
+  }
+
+  .logo-image {
+    height: 34px;
   }
 
   .section {
