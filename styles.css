@@ -693,7 +693,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   border-radius: 24px;
   object-fit: cover;
   object-position: center 22%;
-  filter: grayscale(1) contrast(1.02) brightness(1.04) sepia(0.08) hue-rotate(185deg) saturate(0.8);
+  filter: grayscale(1) sepia(0.16) hue-rotate(182deg) saturate(1.35) brightness(1.02) contrast(1.01);
   box-shadow: 0 14px 24px rgba(15, 23, 42, 0.12);
   border: 1px solid rgba(17, 24, 39, 0.06);
 }
