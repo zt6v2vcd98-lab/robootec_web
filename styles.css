@@ -110,11 +110,11 @@ main {
 
 .logo-image {
   width: auto;
-  height: 42px;
+  height: 48px;
 }
 
 .logo-image-footer {
-  height: 38px;
+  height: 42px;
 }
 
 .site-nav {
@@ -917,7 +917,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   }
 
   .logo-image {
-    height: 34px;
+    height: 38px;
   }
 
   .section {
