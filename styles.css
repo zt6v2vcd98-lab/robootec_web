@@ -673,6 +673,16 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   letter-spacing: -0.03em;
 }
 
+.team-photo {
+  width: 86px;
+  height: 86px;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center 26%;
+  box-shadow: 0 14px 24px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+}
+
 .team-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
