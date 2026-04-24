@@ -340,17 +340,20 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .problem-outcome {
+  display: block;
   margin-top: 24px;
   width: 100%;
   padding: 20px 28px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  border: 1px solid rgba(92, 78, 216, 0.22);
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%) !important;
   box-shadow: 0 18px 34px rgba(99, 102, 241, 0.18);
+  overflow: hidden;
 }
 
 .problem-outcome p {
   margin: 0;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 0.96rem;
   font-weight: 700;
   line-height: 1.5;
