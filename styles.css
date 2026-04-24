@@ -335,7 +335,6 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   width: 88px;
   height: 88px;
   object-fit: contain;
-  filter: hue-rotate(228deg) saturate(220%) contrast(1.02);
 }
 
 .dashboard-card-side {
