@@ -544,6 +544,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   height: 108px;
   margin: 0 auto 18px;
   object-fit: contain;
+  filter: hue-rotate(220deg) saturate(115%) brightness(0.94) contrast(1.03);
 }
 
 .pillar-step {
