@@ -514,6 +514,73 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .pillar-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  position: relative;
+}
+
+.pillar-grid::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: calc(50% - 1px);
+  height: 2px;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.16), rgba(124, 58, 237, 0.26), rgba(37, 99, 235, 0.16));
+  z-index: 0;
+  pointer-events: none;
+}
+
+.pillar-card {
+  position: relative;
+  z-index: 1;
+}
+
+.pillar-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.2);
+}
+
+.pillar-outcome {
+  margin-top: 24px;
+  padding: 28px 30px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(92, 78, 216, 0.16);
+  background:
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.16), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(37, 99, 235, 0.14), transparent 30%),
+    #ffffff;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.pillar-outcome-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pillar-outcome p {
+  margin: 16px 0 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .timeline {
@@ -756,6 +823,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   .pillar-grid,
   .investor-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pillar-grid::after {
+    display: none;
   }
 
   .logo-image {
