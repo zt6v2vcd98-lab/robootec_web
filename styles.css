@@ -539,6 +539,13 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   text-align: center;
 }
 
+.pillar-icon {
+  width: 108px;
+  height: 108px;
+  margin: 0 auto 18px;
+  object-fit: contain;
+}
+
 .pillar-step {
   display: inline-flex;
   align-items: center;
@@ -854,6 +861,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   .pillar-card {
     text-align: left;
     padding-top: 28px;
+  }
+
+  .pillar-icon {
+    margin: 0 0 18px;
   }
 
   .pillar-step {
