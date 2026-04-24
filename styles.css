@@ -663,27 +663,46 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 62px;
-  height: 62px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(124, 58, 237, 0.12));
-  color: var(--primary);
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.18), rgba(124, 58, 237, 0.16));
+  color: #27579b;
   font-weight: 800;
+  font-size: 2rem;
   letter-spacing: -0.03em;
+  box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.74);
 }
 
 .team-photo {
-  width: 86px;
-  height: 86px;
-  border-radius: 24px;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
   object-fit: cover;
-  object-position: center 26%;
+  object-position: center 22%;
+  filter: grayscale(1) contrast(1.04) brightness(1.02);
   box-shadow: 0 14px 24px rgba(15, 23, 42, 0.12);
-  border: 1px solid rgba(17, 24, 39, 0.06);
+  border: 6px solid rgba(255, 255, 255, 0.92);
+  outline: 1px solid rgba(37, 99, 235, 0.12);
 }
 
 .team-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.team-card h3 {
+  margin: 18px 0 8px;
+}
+
+.team-card p {
+  margin: 0;
 }
 
 .cta-panel {
