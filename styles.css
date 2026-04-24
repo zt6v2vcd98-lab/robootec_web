@@ -330,10 +330,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .problem-icon {
-  width: 112px;
-  height: 112px;
+  width: 88px;
+  height: 88px;
   object-fit: contain;
-  filter: hue-rotate(138deg) saturate(155%) brightness(0.9);
+  filter: hue-rotate(168deg) saturate(175%) brightness(0.82) contrast(1.05);
 }
 
 .dashboard-card-side {
