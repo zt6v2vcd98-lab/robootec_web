@@ -200,6 +200,13 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   color: var(--primary);
 }
 
+.eyebrow-pill {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(124, 58, 237, 0.14));
+  border: 1px solid rgba(124, 58, 237, 0.12);
+}
+
 .hero {
   padding-top: 72px;
 }
@@ -306,6 +313,27 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .dashboard-card-main {
   inset: 26px 90px 40px 0;
   padding: 28px;
+}
+
+.problem-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.problem-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.problem-icon {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  filter: hue-rotate(138deg) saturate(155%) brightness(0.9);
 }
 
 .dashboard-card-side {
