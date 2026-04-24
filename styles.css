@@ -321,6 +321,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
+  text-align: center;
 }
 
 .problem-card h3 {
