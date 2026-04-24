@@ -339,6 +339,23 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   object-fit: contain;
 }
 
+.problem-outcome {
+  margin-top: 24px;
+  padding: 24px 28px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  box-shadow: 0 18px 34px rgba(99, 102, 241, 0.18);
+}
+
+.problem-outcome p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .dashboard-card-side {
   right: 0;
   bottom: 22px;
