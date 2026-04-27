@@ -811,7 +811,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .footer-shell {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  grid-template-columns: 1fr auto;
   gap: 24px;
   align-items: start;
 }
@@ -821,6 +821,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   display: grid;
   gap: 12px;
   color: var(--muted);
+  justify-items: end;
+  text-align: right;
 }
 
 .footer-logo {
