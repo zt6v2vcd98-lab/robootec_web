@@ -828,7 +828,12 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .footer-logo {
-  margin-bottom: 14px;
+  margin-bottom: 6px;
+}
+
+.footer-copy {
+  margin: 0;
+  line-height: 1.35;
 }
 
 .reveal {
