@@ -372,7 +372,6 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   align-items: baseline;
   gap: 4px;
   flex-wrap: wrap;
-  color: #4f46e5;
 }
 
 .hero-stack-plus,
@@ -380,14 +379,33 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   font-size: clamp(1.2rem, 1.5vw, 1.45rem);
   line-height: 1;
   letter-spacing: -0.03em;
-  color: #4f46e5;
 }
 
 .hero-stack-number {
   font-size: clamp(1.6rem, 2vw, 2rem);
   line-height: 0.95;
   letter-spacing: -0.05em;
-  color: #4f46e5;
+}
+
+.hero-stack-card:nth-child(1) .hero-stack-value,
+.hero-stack-card:nth-child(1) .hero-stack-plus,
+.hero-stack-card:nth-child(1) .hero-stack-number,
+.hero-stack-card:nth-child(1) .hero-stack-percent {
+  color: #2563eb;
+}
+
+.hero-stack-card:nth-child(2) .hero-stack-value,
+.hero-stack-card:nth-child(2) .hero-stack-plus,
+.hero-stack-card:nth-child(2) .hero-stack-number,
+.hero-stack-card:nth-child(2) .hero-stack-percent {
+  color: #7c3aed;
+}
+
+.hero-stack-card:nth-child(3) .hero-stack-value,
+.hero-stack-card:nth-child(3) .hero-stack-plus,
+.hero-stack-card:nth-child(3) .hero-stack-number,
+.hero-stack-card:nth-child(3) .hero-stack-percent {
+  color: #10b981;
 }
 
 .hero-stack-curve {
