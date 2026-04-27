@@ -306,19 +306,17 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-visual-frame {
   min-height: auto;
-  padding: 26px 26px 18px;
+  padding: 10px 8px 0;
   border-radius: 36px;
-  background:
-    radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.08), transparent 28%),
-    #ffffff;
-  border: 1px solid rgba(30, 58, 138, 0.08);
-  box-shadow: var(--shadow-soft);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
   overflow: hidden;
 }
 
 .hero-stack {
   display: grid;
-  gap: 28px;
+  gap: 22px;
 }
 
 .hero-stack-label {
@@ -329,6 +327,14 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   text-transform: uppercase;
 }
 
+.hero-stack-heading {
+  margin: -4px 0 0;
+  font-size: clamp(2rem, 3vw, 3.35rem);
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+  color: #111827;
+}
+
 .hero-stack-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -336,12 +342,15 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .hero-stack-card {
-  min-height: 154px;
-  padding: 28px 26px;
-  border-radius: 30px;
+  min-height: 182px;
+  padding: 28px 28px 24px;
+  border-radius: 32px;
   border: 1px solid rgba(30, 58, 138, 0.1);
-  background: linear-gradient(180deg, #fbfdff 0%, #f8fbff 100%);
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hero-stack-card-title {
@@ -356,7 +365,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-stack-card strong {
   display: block;
-  font-size: clamp(2rem, 2.8vw, 2.8rem);
+  font-size: clamp(2.35rem, 3vw, 3.15rem);
   line-height: 1;
   letter-spacing: -0.04em;
   color: #111827;
@@ -364,8 +373,9 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-stack-curve {
   position: relative;
-  min-height: 190px;
-  border-radius: 28px;
+  min-height: 260px;
+  margin-top: 6px;
+  border-radius: 28px 28px 0 0;
   overflow: hidden;
 }
 
@@ -374,26 +384,26 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 82% 76%, rgba(59, 130, 246, 0.12), transparent 12%),
-    radial-gradient(circle at 92% 88%, rgba(124, 58, 237, 0.14), transparent 10%);
+    radial-gradient(circle at 82% 78%, rgba(59, 130, 246, 0.12), transparent 12%),
+    radial-gradient(circle at 94% 92%, rgba(124, 58, 237, 0.16), transparent 10%);
 }
 
 .hero-stack-curve::after {
   content: "";
   position: absolute;
   left: 0;
-  right: -4%;
-  bottom: 26px;
-  height: 154px;
+  right: -2%;
+  bottom: 18px;
+  height: 186px;
   background: linear-gradient(90deg, #2563eb 0%, #4f46e5 48%, #7c3aed 72%, #4fd1a5 100%);
-  clip-path: polygon(0% 80%, 8% 74%, 16% 67%, 23% 66%, 31% 58%, 39% 48%, 47% 49%, 55% 40%, 63% 27%, 72% 25%, 80% 18%, 89% 10%, 100% 8%, 100% 18%, 89% 20%, 80% 27%, 72% 34%, 63% 42%, 55% 48%, 47% 60%, 39% 63%, 31% 70%, 23% 77%, 16% 79%, 8% 85%, 0% 92%);
+  clip-path: polygon(0% 84%, 8% 78%, 16% 72%, 24% 71%, 31% 63%, 39% 53%, 47% 54%, 55% 44%, 63% 31%, 71% 28%, 79% 24%, 88% 18%, 100% 16%, 100% 22%, 88% 24%, 79% 30%, 71% 35%, 63% 39%, 55% 51%, 47% 59%, 39% 68%, 31% 75%, 24% 82%, 16% 84%, 8% 90%, 0% 96%);
   border-radius: 999px;
 }
 
 .hero-stack-glow {
   position: absolute;
   right: 42px;
-  bottom: 8px;
+  bottom: 2px;
   width: 132px;
   height: 132px;
   border-radius: 50%;
@@ -1086,11 +1096,15 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   }
 
   .hero-visual-frame {
-    padding: 22px 18px 12px;
+    padding: 8px 0 0;
   }
 
   .hero-stack {
     gap: 20px;
+  }
+
+  .hero-stack-heading {
+    font-size: 1.9rem;
   }
 
   .hero-stack-card {
@@ -1104,12 +1118,12 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   }
 
   .hero-stack-curve {
-    min-height: 130px;
+    min-height: 150px;
   }
 
   .hero-stack-curve::after {
     bottom: 18px;
-    height: 102px;
+    height: 112px;
   }
 
   .dashboard-card-main {
