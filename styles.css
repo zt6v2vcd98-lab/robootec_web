@@ -516,6 +516,20 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   position: relative;
   gap: 28px;
   padding-top: 34px;
+  grid-auto-rows: 1fr;
+}
+
+.pillar-grid::before {
+  content: "";
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  top: calc(50% + 32px);
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.22), rgba(124, 58, 237, 0.4), rgba(37, 99, 235, 0.22));
+  z-index: 0;
+  pointer-events: none;
 }
 
 .pillar-grid::after {
@@ -886,6 +900,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   }
 
   .pillar-grid::after {
+    display: none;
+  }
+
+  .pillar-grid::before {
     display: none;
   }
 
