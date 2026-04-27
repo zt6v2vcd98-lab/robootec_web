@@ -700,7 +700,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   border-radius: 24px;
   object-fit: cover;
   object-position: center 22%;
-  filter: grayscale(1) sepia(0.16) hue-rotate(182deg) saturate(1.35) brightness(1.02) contrast(1.01);
+  filter: grayscale(1) sepia(0.3) hue-rotate(198deg) saturate(2.1) brightness(0.98) contrast(1.05);
   box-shadow: 0 14px 24px rgba(15, 23, 42, 0.12);
   border: 1px solid rgba(17, 24, 39, 0.06);
 }
