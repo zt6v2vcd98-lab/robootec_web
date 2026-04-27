@@ -306,7 +306,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-visual-frame {
   min-height: auto;
-  padding: 18px;
+  padding: 26px 26px 18px;
   border-radius: 36px;
   background:
     radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.08), transparent 28%),
@@ -316,10 +316,88 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   overflow: hidden;
 }
 
-.hero-visual-image {
-  width: 100%;
-  height: auto;
+.hero-stack {
+  display: grid;
+  gap: 28px;
+}
+
+.hero-stack-label {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #5b6478;
+  text-transform: uppercase;
+}
+
+.hero-stack-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.hero-stack-card {
+  min-height: 154px;
+  padding: 28px 26px;
+  border-radius: 30px;
+  border: 1px solid rgba(30, 58, 138, 0.1);
+  background: linear-gradient(180deg, #fbfdff 0%, #f8fbff 100%);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+}
+
+.hero-stack-card-title {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #5b6478;
+  text-transform: uppercase;
+}
+
+.hero-stack-card strong {
+  display: block;
+  font-size: clamp(2rem, 2.8vw, 2.8rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #111827;
+}
+
+.hero-stack-curve {
+  position: relative;
+  min-height: 190px;
   border-radius: 28px;
+  overflow: hidden;
+}
+
+.hero-stack-curve::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 82% 76%, rgba(59, 130, 246, 0.12), transparent 12%),
+    radial-gradient(circle at 92% 88%, rgba(124, 58, 237, 0.14), transparent 10%);
+}
+
+.hero-stack-curve::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: -4%;
+  bottom: 26px;
+  height: 154px;
+  background: linear-gradient(90deg, #2563eb 0%, #4f46e5 48%, #7c3aed 72%, #4fd1a5 100%);
+  clip-path: polygon(0% 80%, 8% 74%, 16% 67%, 23% 66%, 31% 58%, 39% 48%, 47% 49%, 55% 40%, 63% 27%, 72% 25%, 80% 18%, 89% 10%, 100% 8%, 100% 18%, 89% 20%, 80% 27%, 72% 34%, 63% 42%, 55% 48%, 47% 60%, 39% 63%, 31% 70%, 23% 77%, 16% 79%, 8% 85%, 0% 92%);
+  border-radius: 999px;
+}
+
+.hero-stack-glow {
+  position: absolute;
+  right: 42px;
+  bottom: 8px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(129, 140, 248, 0.22) 0%, rgba(96, 165, 250, 0.14) 32%, transparent 72%);
 }
 
 .dashboard-card {
@@ -897,6 +975,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
     min-height: 440px;
   }
 
+  .hero-stack-cards {
+    grid-template-columns: 1fr;
+  }
+
   .dashboard-card-main {
     inset: 20px 60px 30px 0;
   }
@@ -1001,6 +1083,33 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
     display: grid;
     gap: 18px;
     min-height: auto;
+  }
+
+  .hero-visual-frame {
+    padding: 22px 18px 12px;
+  }
+
+  .hero-stack {
+    gap: 20px;
+  }
+
+  .hero-stack-card {
+    min-height: auto;
+    padding: 22px 20px;
+    border-radius: 24px;
+  }
+
+  .hero-stack-card strong {
+    font-size: 2rem;
+  }
+
+  .hero-stack-curve {
+    min-height: 130px;
+  }
+
+  .hero-stack-curve::after {
+    bottom: 18px;
+    height: 102px;
   }
 
   .dashboard-card-main {
