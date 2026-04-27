@@ -98,8 +98,7 @@ main {
   min-height: var(--nav-height);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  gap: 28px;
 }
 
 .logo {
@@ -121,6 +120,7 @@ main {
   display: flex;
   align-items: center;
   gap: 28px;
+  margin-left: auto;
 }
 
 .site-nav a {
@@ -192,6 +192,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .nav-cta {
+  margin-left: 8px;
   background: linear-gradient(135deg, #2563eb 0%, #4f46e5 52%, #7c3aed 100%);
   box-shadow: 0 16px 30px rgba(79, 70, 229, 0.26);
 }
@@ -812,7 +813,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .footer-shell {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 24px;
+  gap: 72px;
   align-items: start;
 }
 
@@ -823,6 +824,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   color: var(--muted);
   justify-items: end;
   text-align: right;
+  padding-left: 32px;
 }
 
 .footer-logo {
