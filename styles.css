@@ -235,8 +235,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .validation-grid,
 .contact-layout {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
+  grid-template-columns: 1.14fr 0.86fr;
+  gap: 42px;
   align-items: center;
 }
 
@@ -316,11 +316,11 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-stack {
   display: grid;
-  gap: 22px;
+  gap: 18px;
 }
 
 .hero-stack-label {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   color: #5b6478;
@@ -329,7 +329,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-stack-heading {
   margin: -4px 0 0;
-  font-size: clamp(2rem, 3vw, 3.35rem);
+  font-size: clamp(1.55rem, 2.2vw, 2.35rem);
   line-height: 1.06;
   letter-spacing: -0.05em;
   color: #111827;
@@ -338,13 +338,13 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .hero-stack-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 14px;
 }
 
 .hero-stack-card {
-  min-height: 182px;
-  padding: 28px 28px 24px;
-  border-radius: 32px;
+  min-height: 136px;
+  padding: 22px 20px 18px;
+  border-radius: 26px;
   border: 1px solid rgba(30, 58, 138, 0.1);
   background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.03);
@@ -355,8 +355,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-stack-card-title {
   display: block;
-  margin-bottom: 18px;
-  font-size: 0.92rem;
+  margin-bottom: 14px;
+  font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   color: #5b6478;
@@ -365,7 +365,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-stack-card strong {
   display: block;
-  font-size: clamp(2.35rem, 3vw, 3.15rem);
+  font-size: clamp(1.75rem, 2.2vw, 2.3rem);
   line-height: 1;
   letter-spacing: -0.04em;
   color: #111827;
@@ -373,8 +373,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .hero-stack-curve {
   position: relative;
-  min-height: 260px;
-  margin-top: 6px;
+  min-height: 176px;
+  margin-top: 2px;
   border-radius: 28px 28px 0 0;
   overflow: hidden;
 }
@@ -393,8 +393,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   position: absolute;
   left: 0;
   right: -2%;
-  bottom: 18px;
-  height: 186px;
+  bottom: 12px;
+  height: 126px;
   background: linear-gradient(90deg, #2563eb 0%, #4f46e5 48%, #7c3aed 72%, #4fd1a5 100%);
   clip-path: polygon(0% 84%, 8% 78%, 16% 72%, 24% 71%, 31% 63%, 39% 53%, 47% 54%, 55% 44%, 63% 31%, 71% 28%, 79% 24%, 88% 18%, 100% 16%, 100% 22%, 88% 24%, 79% 30%, 71% 35%, 63% 39%, 55% 51%, 47% 59%, 39% 68%, 31% 75%, 24% 82%, 16% 84%, 8% 90%, 0% 96%);
   border-radius: 999px;
@@ -403,9 +403,9 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .hero-stack-glow {
   position: absolute;
   right: 42px;
-  bottom: 2px;
-  width: 132px;
-  height: 132px;
+  bottom: -8px;
+  width: 98px;
+  height: 98px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(129, 140, 248, 0.22) 0%, rgba(96, 165, 250, 0.14) 32%, transparent 72%);
 }
@@ -1104,26 +1104,26 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   }
 
   .hero-stack-heading {
-    font-size: 1.9rem;
+    font-size: 1.55rem;
   }
 
   .hero-stack-card {
     min-height: auto;
-    padding: 22px 20px;
+    padding: 18px 18px;
     border-radius: 24px;
   }
 
   .hero-stack-card strong {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .hero-stack-curve {
-    min-height: 150px;
+    min-height: 120px;
   }
 
   .hero-stack-curve::after {
-    bottom: 18px;
-    height: 112px;
+    bottom: 12px;
+    height: 82px;
   }
 
   .dashboard-card-main {
