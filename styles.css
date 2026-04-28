@@ -1364,6 +1364,91 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.about-hero-visual {
+  position: relative;
+}
+
+.about-hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.about-timeline {
+  position: relative;
+  display: grid;
+  gap: 24px;
+}
+
+.about-timeline::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: 18px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.28), rgba(124, 58, 237, 0.22), rgba(16, 185, 129, 0.24));
+}
+
+.about-story-card {
+  position: relative;
+  padding-left: 72px;
+}
+
+.about-story-card::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  box-shadow: 0 0 0 8px rgba(99, 102, 241, 0.08);
+  transform: translateX(-50%);
+}
+
+.about-story-card h2 {
+  margin-top: 14px;
+}
+
+.about-story-card p {
+  margin: 14px 0 0;
+}
+
+.about-list {
+  margin-top: 14px;
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-team-card {
+  align-items: flex-start;
+}
+
+.team-photo-neutral {
+  filter: grayscale(1) brightness(1.02) contrast(0.96);
+}
+
+.team-description {
+  margin-top: 10px !important;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .team-card {
   display: flex;
   flex-direction: row;
@@ -1554,6 +1639,11 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
     grid-template-columns: 1fr;
   }
 
+  .about-hero-grid,
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+
   .card-grid-four,
   .team-grid,
   .timeline,
@@ -1709,6 +1799,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
     align-items: flex-start;
     gap: 16px;
   }
+
+  .about-story-card {
+    padding-left: 56px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1822,6 +1916,18 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
   .validation-stat-item {
     min-height: auto;
+  }
+
+  .about-timeline::before {
+    left: 14px;
+  }
+
+  .about-story-card {
+    padding-left: 42px;
+  }
+
+  .about-story-card::before {
+    left: 14px;
   }
 
   .dashboard-card-main {
