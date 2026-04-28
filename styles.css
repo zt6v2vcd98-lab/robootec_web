@@ -522,15 +522,16 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .problem-outcome p {
   margin: 0;
-  color: #1f2f6b !important;
   font-size: 0.96rem;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
 }
 
-.outcome-highlight {
+.problem-outcome .outcome-highlight,
+.pillar-outcome .outcome-highlight {
   margin: 0;
+  display: block;
   font-size: clamp(1.45rem, 2.6vw, 2.25rem) !important;
   line-height: 1.08;
   letter-spacing: -0.04em;
@@ -937,7 +938,16 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   padding: 28px;
 }
 
+.validation-grid {
+  grid-template-columns: 1.02fr 0.88fr;
+  gap: 34px;
+  align-items: start;
+}
+
 .validation-card-visual {
+  width: 100%;
+  max-width: 620px;
+  justify-self: end;
   padding: 18px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 252, 255, 0.96));
@@ -1036,7 +1046,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .validation-graph-header h3 {
   margin: 0;
   flex: 1;
-  font-size: clamp(1.55rem, 2.3vw, 2.2rem);
+  font-size: clamp(1.35rem, 2vw, 1.95rem);
   line-height: 1.06;
   letter-spacing: -0.04em;
 }
@@ -1078,8 +1088,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .validation-chart {
   position: relative;
-  min-height: 520px;
-  padding: 88px 28px 64px 72px;
+  min-height: 458px;
+  padding: 82px 24px 58px 64px;
   border-radius: 28px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 252, 249, 0.96));
@@ -1089,7 +1099,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .validation-grid-lines {
   position: absolute;
-  inset: 82px 24px 66px 68px;
+  inset: 78px 22px 58px 60px;
   background-image:
     linear-gradient(rgba(17, 24, 39, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px);
@@ -1106,8 +1116,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .validation-axis-y {
-  top: 82px;
-  bottom: 66px;
+  top: 78px;
+  bottom: 58px;
   left: 16px;
   display: flex;
   flex-direction: column;
@@ -1116,8 +1126,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 }
 
 .validation-axis-x {
-  left: 68px;
-  right: 24px;
+  left: 60px;
+  right: 22px;
   bottom: 18px;
   display: flex;
   justify-content: space-between;
@@ -1125,9 +1135,9 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .validation-chart-svg {
   position: absolute;
-  inset: 82px 24px 66px 68px;
-  width: calc(100% - 92px);
-  height: calc(100% - 148px);
+  inset: 78px 22px 58px 60px;
+  width: calc(100% - 82px);
+  height: calc(100% - 136px);
   overflow: visible;
 }
 
@@ -1157,11 +1167,11 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .validation-value-card {
   position: absolute;
-  top: 58px;
-  left: 102px;
+  top: 50px;
+  left: 78px;
   z-index: 2;
-  min-width: 220px;
-  padding: 18px 20px 16px;
+  min-width: 198px;
+  padding: 16px 18px 14px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(17, 24, 39, 0.04);
@@ -1183,7 +1193,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .validation-value-card strong {
   display: block;
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.7rem);
   line-height: 1;
   letter-spacing: -0.05em;
   color: #22a75f;
@@ -1216,15 +1226,15 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .validation-stats-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 14px;
 }
 
 .validation-stat-item {
   display: flex;
   align-items: center;
   gap: 16px;
-  min-height: 116px;
-  padding: 18px 20px;
+  min-height: 104px;
+  padding: 16px 18px;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(17, 24, 39, 0.04);
@@ -1386,39 +1396,55 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .about-timeline {
   position: relative;
   display: grid;
-  gap: 24px;
+  gap: 28px;
 }
 
 .about-timeline::before {
   content: "";
   position: absolute;
-  top: 24px;
-  bottom: 24px;
-  left: 18px;
+  top: 18px;
+  bottom: 18px;
+  left: 72px;
   width: 2px;
   background: linear-gradient(180deg, rgba(37, 99, 235, 0.28), rgba(124, 58, 237, 0.22), rgba(16, 185, 129, 0.24));
 }
 
-.about-story-card {
+.about-timeline-item {
   position: relative;
-  padding-left: 72px;
+  display: grid;
+  grid-template-columns: 144px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.about-timeline-rail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  z-index: 1;
+}
+
+.about-timeline .story-year {
+  min-width: 104px;
+  min-height: 42px;
+  padding: 0 20px;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: #ffffff;
+  box-shadow: 0 14px 26px rgba(79, 70, 229, 0.18);
+  border: 4px solid #ffffff;
+}
+
+.about-story-card {
+  padding-left: 28px;
 }
 
 .about-story-card::before {
-  content: "";
-  position: absolute;
-  top: 34px;
-  left: 18px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-  box-shadow: 0 0 0 8px rgba(99, 102, 241, 0.08);
-  transform: translateX(-50%);
+  display: none;
 }
 
 .about-story-card h2 {
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 .about-story-card p {
@@ -1713,6 +1739,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
     gap: 28px;
   }
 
+  .validation-card-visual {
+    max-width: 560px;
+  }
+
   .validation-mini-grid {
     grid-template-columns: 1fr;
   }
@@ -1864,6 +1894,12 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
   .validation-card-visual {
     padding: 14px;
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .validation-grid {
+    grid-template-columns: 1fr;
   }
 
   .validation-chart {
@@ -1918,16 +1954,31 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
     min-height: auto;
   }
 
+  .about-timeline {
+    gap: 20px;
+  }
+
   .about-timeline::before {
-    left: 14px;
+    display: none;
+  }
+
+  .about-timeline-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .about-timeline-rail {
+    justify-content: flex-start;
+  }
+
+  .about-timeline .story-year {
+    min-width: 92px;
+    min-height: 40px;
+    padding: 0 18px;
   }
 
   .about-story-card {
-    padding-left: 42px;
-  }
-
-  .about-story-card::before {
-    left: 14px;
+    padding-left: 0;
   }
 
   .dashboard-card-main {
