@@ -103,7 +103,8 @@
         </div>
         <div class="problem-outcome reveal">
           <span class="problem-outcome-label">DŮSLEDEK</span>
-          <p>NÍZSKÉ INVESTIČNÍ ZHODNOCENÍ, 95% RETAIL TRADERŮ KONČÍ VE ZTRÁTĚ A PROFI NÁSTROJE JSOU FINANČNĚ NÁKLADNÉ. NIC MEZI TÍM.</p>
+          <p class="outcome-highlight">95 % RETAIL TRADERŮ KONČÍ VE ZTRÁTĚ</p>
+          <p class="outcome-detail">Profesionální nástroje jsou složité a finančně nákladné. Mezi tím chybí efektivní řešení.</p>
         </div>
       </div>
     </section>
@@ -143,7 +144,8 @@
         </div>
         <div class="pillar-outcome reveal">
           <span class="pillar-outcome-label">ROBOOTEC.AI</span>
-          <p>VYŠŠÍ ZHODNOCENÍ INVESTICE</p>
+          <p class="outcome-highlight">CHYTŘEJŠÍ A STABILNĚJŠÍ ROZHODOVÁNÍ</p>
+          <p class="outcome-detail">Kombinace dat, AI a exekuce přináší konzistentnější výsledky a lepší kontrolu nad rizikem.</p>
         </div>
       </div>
     </section>
@@ -189,19 +191,93 @@
 
     <section class="section section-muted">
       <div class="container validation-grid">
-        <div class="section-heading reveal">
+        <div class="section-heading validation-copy reveal">
           <span class="eyebrow eyebrow-pill">JAK POSTUPUJEME</span>
           <h2>Ověřujeme, testujeme, zlepšujeme</h2>
-          <p>Náš prototyp jsme testovali na reálných tržních datech v demo prostředí trhu NASDAQ. Jsme sice pořád ve vývoji, ale už to funguje!</p>
-          <ul class="feature-list validation-list">
-            <li>zpřesňování modelů</li>
-            <li>ověření rozhodovací logiky</li>
-            <li>práce s daty a řízení rizika</li>
-          </ul>
+          <p>Prototyp testujeme na reálných tržních datech v demo prostředí. Zaměřujeme se na kvalitu rozhodování, práci s daty a řízení rizika.</p>
+          <div class="validation-mini-grid">
+            <article class="validation-mini-card validation-mini-blue">
+              <h3>Modely &amp; AI</h3>
+              <p>Průběžně zpřesňujeme predikční modely na základě reálných dat.</p>
+            </article>
+            <article class="validation-mini-card validation-mini-purple">
+              <h3>Rozhodovací logika</h3>
+              <p>Testujeme a optimalizujeme výběr scénářů a obchodních strategií.</p>
+            </article>
+            <article class="validation-mini-card validation-mini-green">
+              <h3>Risk management</h3>
+              <p>Ladíme řízení rizika a stabilitu rozhodování v různých situacích.</p>
+            </article>
+          </div>
           <p class="disclaimer">Historické/testovací výsledky nejsou garancí budoucí výkonnosti.</p>
         </div>
         <div class="validation-card validation-card-visual reveal reveal-delay-1" aria-hidden="true">
-          <img class="validation-image" src="assets/validation-backtest.png" alt="Backtest prototypu v demo prostředí NASDAQ">
+          <div class="validation-graph-shell">
+            <span class="validation-micro-label">Demo testování (NASDAQ)</span>
+            <div class="validation-graph-header">
+              <span class="validation-graph-icon">↗</span>
+              <h3>VÝVOJ HODNOTY ÚČTU</h3>
+              <span class="validation-status">SOUČASNÝ STAV</span>
+            </div>
+            <div class="validation-chart">
+              <div class="validation-value-card">
+                <span class="validation-value-label">SOUČASNÝ STAV</span>
+                <strong>$ 120,024</strong>
+                <div class="validation-value-meta">
+                  <span>↗ +20,2 %</span>
+                  <span>CELKOVÝ ZISK</span>
+                </div>
+              </div>
+              <div class="validation-grid-lines"></div>
+              <div class="validation-axis validation-axis-y">
+                <span>120,000</span>
+                <span>110,000</span>
+                <span>100,000</span>
+              </div>
+              <div class="validation-axis validation-axis-x">
+                <span>0</span>
+                <span>10</span>
+                <span>20</span>
+                <span>30</span>
+                <span>40</span>
+                <span>50</span>
+              </div>
+              <svg class="validation-chart-svg" viewBox="0 0 640 360" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="validationArea" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(52, 211, 153, 0.34)"></stop>
+                    <stop offset="100%" stop-color="rgba(52, 211, 153, 0.02)"></stop>
+                  </linearGradient>
+                </defs>
+                <path class="validation-area" d="M0,286 C26,276 42,234 64,226 C86,218 106,210 128,194 C150,176 170,148 192,170 C214,192 234,142 256,154 C278,166 298,122 320,136 C342,150 362,80 384,70 C406,60 426,144 448,122 C470,100 490,132 512,88 C534,44 554,156 576,112 C598,68 618,52 640,46 L640,360 L0,360 Z"></path>
+                <path class="validation-line" d="M0,286 C26,276 42,234 64,226 C86,218 106,210 128,194 C150,176 170,148 192,170 C214,192 234,142 256,154 C278,166 298,122 320,136 C342,150 362,80 384,70 C406,60 426,144 448,122 C470,100 490,132 512,88 C534,44 554,156 576,112 C598,68 618,52 640,46"></path>
+                <circle class="validation-point" cx="640" cy="46" r="10"></circle>
+              </svg>
+            </div>
+            <div class="validation-stats-row">
+              <div class="validation-stat-item">
+                <span class="validation-stat-icon">$</span>
+                <div>
+                  <span class="validation-stat-label">Počáteční investice</span>
+                  <strong>$ 100,000</strong>
+                </div>
+              </div>
+              <div class="validation-stat-item">
+                <span class="validation-stat-icon">↗</span>
+                <div>
+                  <span class="validation-stat-label">Celkový zisk</span>
+                  <strong>$ 20,024</strong>
+                </div>
+              </div>
+              <div class="validation-stat-item">
+                <span class="validation-stat-icon">◎</span>
+                <div>
+                  <span class="validation-stat-label">Winrate</span>
+                  <strong>51,6 %</strong>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
