@@ -133,6 +133,7 @@ main {
 .site-nav a:focus-visible,
 body[data-page="about"] .site-nav a[href="o-nas.html"],
 body[data-page="technology"] .site-nav a[href="technologie.html"],
+body[data-page="investors"] .site-nav a[href="pro-investory.html"],
 body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   color: var(--text);
 }
@@ -206,6 +207,20 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .button-full {
   width: 100%;
+}
+
+.button-outline {
+  color: #3456c5;
+  background: #ffffff;
+  border-color: rgba(79, 70, 229, 0.16);
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.08);
+}
+
+.button-light-outline {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
 }
 
 .eyebrow {
@@ -631,6 +646,10 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 .section-heading {
   max-width: 760px;
   margin-bottom: 42px;
+}
+
+.about-timeline-heading {
+  margin-bottom: 28px;
 }
 
 .section-heading h2,
@@ -1313,6 +1332,14 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   margin: 0;
 }
 
+.about-approach-lead {
+  max-width: 880px;
+  font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+  line-height: 1.6;
+  color: #1f2f6b !important;
+  font-weight: 700;
+}
+
 .segment-card-green {
   background:
     radial-gradient(circle at top right, rgba(16, 185, 129, 0.08), transparent 34%),
@@ -1383,14 +1410,40 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .about-hero-visual {
   position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(17, 24, 39, 0.06);
 }
 
 .about-hero-image {
   width: 100%;
-  height: auto;
-  border-radius: 32px;
-  box-shadow: var(--shadow-soft);
+  height: 100%;
+  min-height: 540px;
+  object-fit: cover;
+  object-position: center 57%;
+  transform: scale(1.12);
+  transform-origin: center center;
+  filter: saturate(0.84) contrast(0.94) brightness(1.02);
+}
+
+.about-hero-caption {
+  position: absolute;
+  left: 24px;
+  bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(17, 24, 39, 0.06);
+  backdrop-filter: blur(8px);
+  color: #4b5563;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.06);
 }
 
 .about-timeline {
@@ -1453,6 +1506,56 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 .about-list {
   margin-top: 14px;
+}
+
+.about-story-card-current {
+  position: relative;
+  border-color: rgba(79, 70, 229, 0.14);
+  background:
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.12), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.12), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(245, 249, 255, 0.98));
+  box-shadow: 0 22px 42px rgba(79, 70, 229, 0.08);
+}
+
+.about-story-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: rgba(79, 70, 229, 0.1);
+  color: #5b4fd4;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-story-notes {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.about-story-note {
+  padding: 18px 18px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
+}
+
+.about-story-note h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.about-story-note p {
+  margin-top: 10px;
 }
 
 .about-team-grid {
@@ -1520,9 +1623,523 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   gap: 22px;
 }
 
+.technology-hero-grid {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 38px;
+  align-items: center;
+}
+
+.tech-hero-panel {
+  padding: 30px;
+  border-radius: 32px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  background:
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.12), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(246, 249, 255, 0.97));
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.06);
+}
+
+.tech-hero-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tech-hero-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.tech-hero-node {
+  display: grid;
+  gap: 10px;
+  min-height: 138px;
+  padding: 18px 16px;
+  border-radius: 24px;
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.04);
+}
+
+.tech-hero-node strong {
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.tech-hero-node span {
+  color: var(--muted);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.tech-hero-node:nth-child(1) strong {
+  color: #2563eb;
+}
+
+.tech-hero-node:nth-child(2) strong {
+  color: #7c3aed;
+}
+
+.tech-hero-node:nth-child(3) strong {
+  color: #10b981;
+}
+
+.tech-hero-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.tech-hero-summary span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  color: #4b5563;
+  font-size: 0.88rem;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+}
+
 .contact-panel,
 .contact-form {
   padding: 32px;
+}
+
+.contact-hero-grid {
+  display: grid;
+  grid-template-columns: 0.96fr 1.04fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.contact-hero-text {
+  max-width: 640px;
+  font-size: clamp(1.05rem, 1.45vw, 1.22rem);
+  line-height: 1.7;
+}
+
+.contact-hero-actions {
+  margin-top: 36px;
+}
+
+.contact-hero-panel {
+  padding: 30px;
+  border-radius: 32px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  background:
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.12), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(246, 249, 255, 0.97));
+  box-shadow: 0 20px 42px rgba(15, 23, 42, 0.06);
+}
+
+.contact-hero-panel-header h2 {
+  margin: 10px 0 0;
+  font-size: clamp(1.8rem, 2.4vw, 2.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.contact-panel-kicker {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-person-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.contact-person-card {
+  padding: 22px 22px 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.04);
+}
+
+.contact-person-card-blue {
+  background:
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.08), transparent 34%),
+    rgba(255, 255, 255, 0.94);
+}
+
+.contact-person-card-purple {
+  background:
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.08), transparent 34%),
+    rgba(255, 255, 255, 0.94);
+}
+
+.contact-person-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.05);
+  color: #4b5563;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.contact-person-card h3 {
+  margin: 16px 0 6px;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.contact-role {
+  margin: 0;
+  color: #1f2f6b !important;
+  font-weight: 700;
+}
+
+.contact-person-links {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.contact-person-links a {
+  color: #4b5563;
+  font-weight: 700;
+}
+
+.contact-person-focus {
+  margin: 18px 0 0 !important;
+  color: #111827 !important;
+  font-weight: 700 !important;
+  line-height: 1.5;
+}
+
+.contact-secondary-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.contact-secondary-item {
+  padding: 18px 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.03);
+}
+
+.contact-secondary-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #6b7280;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-secondary-item a {
+  font-weight: 700;
+  color: #1f2f6b;
+}
+
+.contact-cta-panel {
+  border: 0;
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 52%, #7c3aed 100%);
+  box-shadow: 0 24px 46px rgba(79, 70, 229, 0.22);
+}
+
+.contact-cta-panel h2,
+.contact-cta-panel p,
+.contact-cta-label {
+  color: #ffffff !important;
+}
+
+.contact-cta-label {
+  opacity: 0.86;
+}
+
+.contact-company-section {
+  padding-top: 0;
+}
+
+.contact-company-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+  border-radius: 24px;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  background: #ffffff;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.04);
+}
+
+.contact-company-label {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.contact-company-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: #4b5563;
+  font-weight: 700;
+  justify-content: flex-end;
+}
+
+.investor-hero-grid {
+  display: grid;
+  grid-template-columns: 0.98fr 1.02fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.investor-hero-text {
+  max-width: 660px;
+  font-size: clamp(1.05rem, 1.45vw, 1.22rem);
+  line-height: 1.7;
+}
+
+.investor-hero-actions {
+  margin-top: 36px;
+}
+
+.investor-hero-panel {
+  padding: 30px;
+  border-radius: 32px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  background:
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.12), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(246, 249, 255, 0.97));
+  box-shadow: 0 20px 42px rgba(15, 23, 42, 0.06);
+}
+
+.investor-panel-kicker {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.investor-hero-panel h2 {
+  margin: 10px 0 0;
+  font-size: clamp(1.8rem, 2.4vw, 2.45rem);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.investor-hero-points {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.investor-point {
+  padding: 18px 18px 16px;
+  border-radius: 22px;
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
+}
+
+.investor-point strong {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.investor-point p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.investor-funding-note {
+  margin-top: 18px;
+  padding: 18px 20px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.03);
+}
+
+.investor-funding-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.investor-funding-note p {
+  margin: 12px 0 0;
+  color: #1f2f6b;
+  font-weight: 700;
+}
+
+.investor-progress-shell {
+  display: grid;
+  gap: 20px;
+}
+
+.investor-progress-card {
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.investor-progress-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.investor-check-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+  padding-left: 22px;
+}
+
+.investor-check-list li::marker {
+  content: "✔ ";
+  color: #10b981;
+}
+
+.investor-progress-line {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding-top: 28px;
+}
+
+.investor-progress-track {
+  position: absolute;
+  top: 12px;
+  left: 12%;
+  right: 12%;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.26), rgba(124, 58, 237, 0.34), rgba(16, 185, 129, 0.18));
+}
+
+.investor-progress-stage {
+  position: relative;
+  padding-top: 26px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.investor-progress-stage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #dbe4f5;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(17, 24, 39, 0.06);
+}
+
+.investor-progress-stage-done::before {
+  background: #2563eb;
+}
+
+.investor-progress-stage-current::before {
+  background: #10b981;
+  box-shadow: 0 0 0 8px rgba(16, 185, 129, 0.1);
+}
+
+.investor-progress-stage-current span {
+  color: #059669;
+}
+
+.investor-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.investor-cta-panel {
+  border: 0;
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 52%, #7c3aed 100%);
+  box-shadow: 0 24px 46px rgba(79, 70, 229, 0.22);
+}
+
+.investor-cta-panel h2,
+.investor-cta-panel p,
+.investor-cta-label {
+  color: #ffffff !important;
+}
+
+.investor-cta-label {
+  opacity: 0.86;
 }
 
 .contact-details {
@@ -1658,6 +2275,8 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
 @media (max-width: 1080px) {
   .hero-grid,
+  .contact-hero-grid,
+  .investor-hero-grid,
   .validation-grid,
   .contact-layout,
   .footer-shell,
@@ -1666,6 +2285,7 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   }
 
   .about-hero-grid,
+  .technology-hero-grid,
   .about-team-grid {
     grid-template-columns: 1fr;
   }
@@ -1679,7 +2299,11 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
   }
 
   .validation-mini-grid,
-  .validation-stats-row {
+  .validation-stats-row,
+  .tech-hero-flow,
+  .contact-person-grid,
+  .contact-secondary-strip,
+  .investor-progress-line {
     grid-template-columns: 1fr;
   }
 
@@ -1731,7 +2355,9 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
 
   .card-grid-two,
   .pillar-grid,
-  .investor-grid {
+  .investor-grid,
+  .contact-company-card,
+  .investor-why-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1828,6 +2454,28 @@ body[data-page="contact"] .site-nav a[href="kontakt.html"] {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+  }
+
+  .contact-company-card {
+    display: grid;
+  }
+
+  .contact-company-meta {
+    justify-content: flex-start;
+  }
+
+  .investor-progress-track {
+    display: none;
+  }
+
+  .investor-progress-stage {
+    text-align: left;
+    padding: 0 0 0 32px;
+  }
+
+  .investor-progress-stage::before {
+    left: 0;
+    transform: none;
   }
 
   .about-story-card {
